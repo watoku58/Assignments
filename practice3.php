@@ -1,21 +1,34 @@
 <?php
+//課題1
 function multiplication($value){
-    echo $value * 2;
+    $result = $value * 2;
+    return $result;
 }
-multiplication(10);
+echo multiplication(10);
+echo "\n"
 ?>
 
 <?php
+//課題2
 function add($a, $b){
-    echo $a + $b;
+    $result = $a + $b;
+    return $result;
 }
-add(1,2)
+echo add(1, 2);
+echo "\n"
 ?>
 
 <?php
-$array = array(1,3,5,7,9);
-$result = array_product($array);
-var_dump($result);
+//課題3
+function mpl($arr){
+    $result = 1;
+    foreach($arr as $a){
+        $result *= $a;
+    }
+    return $result;
+}
+echo mpl([1,3,5,7,9]);
+echo "\n"
 ?>
 
 <?php
